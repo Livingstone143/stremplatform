@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, {   useState } from 'react'
 import "./Nav.css";
 function Nav() {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-      if (window.scrollY >= 80) {
+      if (window.scrollY >= 150) {
           setColorchange(true);
       }
       else {

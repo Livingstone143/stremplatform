@@ -25,8 +25,7 @@
         transparent,
         rgba(37,37,37,0.061),
         #111);
- 
-     
+ margin-top: 15px;     
     }
     .Banner_button {
         padding-top: 0.5rem;
@@ -45,7 +44,6 @@
         padding-top: 0.5rem;
         background-color:rgba(51,51,51,0.5);
         padding-bottom:0.5rem; ;
-        
         transition :all 0.4s;
 
     }
