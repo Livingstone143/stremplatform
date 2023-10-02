@@ -1,34 +1,39 @@
 import React,{useState,useEffect} from 'react'
 import './Banner.css'
-import axios from'./axios';
+import axios from 'axios';
 import requests from'./Requests';
 function Banner() {
     const [movie,setMovie]=useState([]);
     useEffect(()=>{
         async function fetchData(){
-            const request = await axios.get(requests.fertchNetflixOriginal);
+            const request = await axios.get(requests.get);
             setMovie(
                 request.data.results[
-                    Math.floor(Math.random()*request.data.results.length-1)
+                    Math.floor(Math.random()*request.data.results.length)
                 ]
+
             );
             return request;
+              
+
             }
  fetchData();
- 
-    },[]);
+
+},[]);
+const img=`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`;
+console.log(img);
   return (
    <header className='banner' style={{
     backgroundSize:"cover",
-    backgroundImage:"url('https://i.postimg.cc/Bb2Wm4Zn/aa.png')",
+    backgroundImage: `URL("${img}")`,
      }}>
      <div className='Banner_contents'>
-        <h1 className='Banner_titles'>Bro</h1>
+        <h1 className='Banner_titles'>{movie.original_title}</h1>
         <div className='Banner_button'>    
      <button className='banner_buttons'>Play</button>
      <button className='banner_buttons'>My list</button>
      </div> 
-     <h1 className='Des'>An overworked man who often fails to focus on his loved ones is given a chance to turn his life around when he meets Titan, the god of time.</h1>
+     <h1 className='Des'>{movie.overview}</h1>
      </div>
      <div className='banner--fadeBottom'/>
    </header>

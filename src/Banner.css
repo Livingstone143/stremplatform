@@ -1,5 +1,5 @@
 .banner{
-    height:448px;
+    max-height:448px;
     position: relative;
     object-fit: contain;
     background-position: center center;
