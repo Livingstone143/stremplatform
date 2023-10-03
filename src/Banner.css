@@ -4,6 +4,8 @@
     object-fit: contain;
     background-position: center center;
     color: #fff;
+    
+    text-shadow:#111 1px ;
 }
 .Banner_contents{
     margin-left:30px;
