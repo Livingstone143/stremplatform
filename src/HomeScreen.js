@@ -10,12 +10,12 @@ function HomeScreen() {
 <Nav/>
  <Banner/>
  <Row
-  title="Trending On Netflix" 
+  title="NETFLIX ORIGINALS" 
   fetchUrl={requests.get}
   isLargeRow
    />
  <Row
-  title="Top Rated" 
+  title="Trending" 
   fetchUrl={requests.rated}
    />
    <Row
@@ -31,7 +31,7 @@ function HomeScreen() {
   fetchUrl={requests.romance}
    />
    <Row
-  title="Trending On Netflix" 
+  title="Fantasy Movies" 
   fetchUrl={requests.fan}
    />
         </div>
