@@ -12,6 +12,7 @@ function HomeScreen() {
  <Row
   title="Trending On Netflix" 
   fetchUrl={requests.get}
+  isLargeRow
    />
  <Row
   title="Top Rated" 
