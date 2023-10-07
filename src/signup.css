@@ -1,0 +1,65 @@
+.Signup_body{
+    max-width: 300px;
+    padding: 70px;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0,0,0,0.85);
+}
+.Signup_body>form{
+    display: grid;
+    flex-direction: column;
+    
+}
+.Signup_body>form>input{
+    border: none;
+    padding: 5px 15px;
+    outline-width: 0;
+    height:14px;
+    border-radius: 5px;
+     margin-bottom: 14px;
+}
+.Signup_body>form>button{
+     
+
+    padding: 10px 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    cursor: pointer;
+    border: none;
+   font-weight: 900;
+    border-radius: 5px;
+    }
+    .Signup_body>form>h1{
+        font-weight: 100;
+         
+        padding-bottom: 20px;
+}
+.remember{
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+    border:none;
+    color:slategray;
+}
+ .grey{
+    color: grey;
+
+ }
+ .link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+
+ }
+ .spaner{
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+    border:none;
+    width: 100%;
+    position:inherit;
+     
+   
+ }
