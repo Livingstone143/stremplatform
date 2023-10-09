@@ -20,7 +20,7 @@ function Sign() {
                         <h1 className='text'>The biggest Indian hits. Ready to watch here<br></br> from ₹ 149.
                         </h1>
                         <h2>Join today. Cancel anytime.</h2>
-                        <h2>Ready to watch? Enter your email to create or restart your membership.</h2>
+                        <h2>Ready to watch? Enter your email to create or restart your  membership.</h2>
                         <div className='emailbox'>
                             <form action='post'>
                                 <input type='email' className='email' placeholder='Email address'></input>
